@@ -11,17 +11,21 @@ body {
   width: 100%;
   height: 100%;
 }
+
+/*----------------------------------------------------------- Navbar start--------------------------------------------------------- */
+
 .navbar {
-  width: 100vw;
+  width: 100%;
   height: 10vh;
   background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+ /* display: block; */
 }
 .nav-left {
-  width: 50vw;
+  width: 50%;
   height: 10vh;
   display: flex;
   align-items: center;
@@ -65,13 +69,16 @@ i {
 }
 
 .nav-right {
-  width: 50vw;
+  width: 50%;
   height: 10vh;
   display: flex;
   align-items: center;
   justify-content: end;
   padding-right: 5vw;
   font-weight: 200;
+}
+.nav-right a {
+  display: block;
 }
 .nav-right button {
   border-color: #f60014;
@@ -93,6 +100,7 @@ i {
 
 .nav-right ul a button {
   margin-left: 10vw;
+  display: block;
 }
 .nav-right li {
   margin-left: 0.1vw;
@@ -103,21 +111,24 @@ i {
   cursor: pointer;
 }
 
+/*------------------------------------------------------------- NAvbar end ------------------------------------------------------------ */
+
 .container {
-  width: 100vw;
+  width: 100%;
   height: 88vh;
   background-color: #f8f9fb;
   display: flex;
+  position: relative;
 }
 .left-content {
-  width: 50vw;
-  height: 88vh;
+  width: 50%;
+  height: 100vh;
   display: flex;
   align-items: end;
   justify-content: start;
   flex-direction: column;
   padding-top: 6vh;
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
 }
 .left-content-child h1 {
   font-size: 51px;
@@ -132,16 +143,16 @@ i {
 }
 
 .right-content {
-  width: 50vw;
-  height: 88vh;
+  width: 50%;
+  height: 100vh;
   display: flex;
   align-items: end;
   justify-content: start;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 hr {
   width: 4vw;
-  height: 0.025vh;
+  height: 0.3vh;
   border: none;
   background-color: #f60014;
   margin-top: 2vh;
@@ -154,7 +165,7 @@ hr {
   flex-direction: column;
   width: 85%;
   height: 55%;
-  background-color: violet;
+  /* background-color: violet; */
 }
 .get-start {
   padding: 2vh 2.5vw;
